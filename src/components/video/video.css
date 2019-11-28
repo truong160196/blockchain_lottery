@@ -1,0 +1,28 @@
+/* lottery video Area Start */
+
+.lottery-video {
+	background: #0b122e;
+	padding: 0px 0px 70px;
+	margin-top: -245px;
+}
+
+.lottery-video .video-box {
+	/* background: url(../images/lottery-video.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; */
+	height: 495px;
+	position: relative;
+	margin-top: -245px;
+}
+
+.lottery-video .video-box .video-icon {
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+
+/* lottery video Area END */

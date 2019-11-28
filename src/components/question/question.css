@@ -1,0 +1,21 @@
+/* Questions Area Start */
+
+.question-area {
+	background-color: #0b122e;
+	padding: 50px 0px 120px;
+}
+
+.question-area .section-heading {
+	text-align: left;
+}
+
+.question-area .section-heading .title {
+	margin-bottom: 30px;
+}
+
+.question-area .section-heading .mybtn1 {
+	margin-top: 22px;
+}
+
+
+/* Questions Area End */

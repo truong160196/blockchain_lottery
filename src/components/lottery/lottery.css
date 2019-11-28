@@ -1,0 +1,292 @@
+/* Lottery Staticstics Area Start */
+.lottery-area {
+	background: #0b122e;
+	padding-bottom: 120px;
+}
+
+.lottery-area .lottery-staticstics {
+	margin-top: -55px;
+}
+
+.lottery-area .lottery-staticstics .single-staticstics {
+	padding: 30px 30px 30px;
+	border-radius: 10px;
+	background-color: rgba(29, 40, 80, 0.302);
+	-webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.4);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+.lottery-area .lottery-staticstics .single-staticstics .left {
+	margin-right: 30px;
+	width: 80px;
+	height: 80px;
+	line-height: 70px;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	background: #0b122e;
+}
+
+.lottery-area .lottery-staticstics .single-staticstics .right {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.lottery-area .lottery-staticstics .single-staticstics .right .title {
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 26px;
+}
+
+.lottery-area .lottery-staticstics .single-staticstics .right .count img {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.lottery-area .lottery-staticstics .single-staticstics .right .count span {
+	display: inline-block;
+	font-size: 24px;
+	line-height: 34px;
+	font-weight: 600;
+	color: #f6a623;
+	position: relative;
+	top: 3px;
+}
+
+.lottery-area .lottery-staticstics .single-staticstics:hover {
+	-webkit-transform: translateY(-10px);
+	-ms-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.lottery-area .daily-lottery {
+	padding: 113px 0px 120px;
+}
+
+.lottery-area .daily-lottery .section-heading {
+	margin-bottom: 57px;
+}
+
+.lottery-area .daily-lottery .draw-time {
+	background: url(../../assets/images/draw-time-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 53px 0px 53px;
+	text-align: center;
+}
+
+.lottery-area .daily-lottery .draw-time .subtitle {
+	font-size: 24px;
+	line-height: 34px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+	background: -webkit-linear-gradient(to left, #ff344d, #d2273c);
+	background: -moz-linear-gradient(to left, #ff344d, #d2273c);
+	background: -ms-linear-gradient(to left, #ff344d, #d2273c);
+	background: -o-linear-gradient(to left, #ff344d, #d2273c);
+	background: -webkit-gradient(linear, right top, left top, from(#ff344d), to(#d2273c));
+	background: -webkit-linear-gradient(right, #ff344d, #d2273c);
+	background: -o-linear-gradient(right, #ff344d, #d2273c);
+	background: linear-gradient(to left, #ff344d, #d2273c);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.lottery-area .daily-lottery .draw-time .text {
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 300;
+	margin-top: 9px;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+}
+
+.lottery-area .daily-lottery .draw-time .draw-counter {
+	margin-top: 7px;
+	border-radius: 3px;
+	display: inline-block;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 70px;
+}
+
+.lottery-area .daily-lottery .draw-time .draw-counter span {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 70px;
+	color: #fff;
+}
+
+.lottery-area .daily-lottery .draw-time .draw-counter span:last-child {
+	margin-right: 0px;
+}
+
+.lottery-area .buy-tickets .buy-tickets-box {
+	background: #070b28;
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .heading {
+	padding: 15px 40px 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	background: #101b3a;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content {
+	padding: 40px 40px 40px;
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .info-box {
+	padding: 21px 30px 20px;
+	background: #0e1833;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .info-box .title {
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .info-box .number {
+	font-size: 16px;
+	line-height: 26px;
+	color: #f6a623;
+	font-weight: 600;
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .info-box .number i {
+	margin-right: 5px;
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .info-box .number input {
+	height: 25px;
+	border-radius: 50px;
+	border: 0px;
+	color: #f6a623;
+	background: #16203a;
+	padding: 0px 20px;
+	width: 100%;
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .game-numbers {
+	padding-top: 30px;
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .game-numbers .title {
+	font-size: 18px;
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .game-numbers .number-box {
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .game-numbers .number-box .auto-number {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 33px 30px 30px;
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .game-numbers .number-box .auto-number .top-content {
+	position: relative;
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .game-numbers .number-box .auto-number .top-content input {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .game-numbers .number-box .auto-number .top-content label {
+	padding-left: 30px;
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .game-numbers .number-box .auto-number .top-content label span {
+	display: block;
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .game-numbers .number-box .manual-number {
+	padding: 33px 30px 37px;
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .game-numbers .number-box .manual-number .top-content {
+	position: relative;
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .game-numbers .number-box .manual-number .top-content input {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .game-numbers .number-box .manual-number .top-content label {
+	padding-left: 30px;
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .game-numbers .number-box .manual-number .top-content label span {
+	display: block;
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .game-numbers .number-box .manual-number .main-content {
+	margin-top: 26px;
+}
+
+.lottery-area .buy-tickets .buy-tickets-box .content .mybtn1 {
+	margin-top: 60px;
+	display: inline-block;
+}
+
+.number-list {
+	margin: 0 -3px;
+}
+
+.number-list li {
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 30px;
+	display: inline-block;
+	margin: 5px;
+	font-weight: 600;
+	color: #f9314b;
+	border-radius: 50%;
+	background-image: -moz-linear-gradient(26deg, #0b122e 9%, #212643 39%, #363a58 100%);
+	background-image: -webkit-linear-gradient(26deg, #0b122e 9%, #212643 39%, #363a58 100%);
+	background-image: -ms-linear-gradient(26deg, #0b122e 9%, #212643 39%, #363a58 100%);
+	background-image: linear-gradient(26deg, #0b122e 9%, #212643 39%, #363a58 100%);
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+.number-list li.active {
+	background-image: -moz-linear-gradient(26deg, #382f21 9%, #8b642a 39%, #de9932 100%);
+	background-image: -webkit-linear-gradient(26deg, #382f21 9%, #8b642a 39%, #de9932 100%);
+	background-image: -ms-linear-gradient(26deg, #382f21 9%, #8b642a 39%, #de9932 100%);
+	background-image: linear-gradient(26deg, #382f21 9%, #8b642a 39%, #de9932 100%);
+	color: #ffffff;
+}
+/* Lottery Staticstics Area End */
