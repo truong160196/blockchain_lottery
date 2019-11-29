@@ -5,15 +5,54 @@ import Menu from '../menu/Menu';
 
 import './header.css';
 
+import Login from '../../login/Login';
+import Register from '../../register/Register';
 class Header extends React.Component {
+  constructor(props) {
+	super(props);
+	this.state = {
+		isShowLogin: false,
+		isShowRegister: false,
+	}
+  }
+
   componentWillMount = () => {
     //
   }
 
+  openShowLogin = () => {
+	this.setState({
+		isShowLogin: true,
+	})
+  }
+
+  handleConfirmLogin = () => {
+	this.setState({
+		isShowLogin: false,
+	})
+  }
+
+  openShowRegister = () => {
+	this.setState({
+		isShowRegister: true,
+	})
+  }
+
+  handleConfirmRegister = () => {
+	this.setState({
+		isShowRegister: false,
+	})
+  }
+
   render() {
+	const {
+		isShowLogin,
+		isShowRegister
+	} = this.state;
+
     return (
 		<div className="header">
-			<div className="top-header">
+			<div className="top-header" style={{display: 'none'}}>
 				<div className="container">
 					<div className="row">
 					<div className="col-lg-12">
@@ -44,29 +83,6 @@ class Header extends React.Component {
 					<div className="right-content">		
 						<ul className="right-list">
 							<li>
-								<div className="cart-icon tm-dropdown">
-									<i className="fas fa-cart-arrow-down"></i>
-									<span className="cart-count">10</span>
-									<div className="tm-dropdown-menu">
-										<ul className="list">
-											<li className="list-item">
-												<div className="close">
-													<i className="fas fa-times"></i>
-												</div>
-												<ul className="number-list">
-													<li>24</li>
-													<li>25</li>
-													<li>26</li>
-													<li>27</li>
-													<li>28</li>
-												</ul>
-											</li>
-										</ul>
-										<a href="cart.html" className="link-btn">Cart Page</a>
-									</div>
-								</div>
-							</li>
-							<li>
 								<div className="notofication tm-dropdown">
 								<i className="fas fa-bell"></i>
 								<span className="count">11</span>
@@ -83,9 +99,9 @@ class Header extends React.Component {
 								</div>
 							</li>
 							<li>
-								<a href="/#" className="sign-in" data-toggle="modal" data-target="/#login">
+								<button className="btn sign-in" data-toggle="modal" data-target="#login" onClick={this.openShowLogin}>
 									<i className="fas fa-user"></i> Sign In
-								</a>
+								</button>
 							</li>
 						</ul>
 					</div>
@@ -94,7 +110,18 @@ class Header extends React.Component {
 				</div>
 			</div>
 			</div>
-			<Menu />
+			<Menu
+				openShowRegister={this.openShowRegister}
+				openShowLogin={this.openShowLogin}
+			/>
+			<Login
+				isShow={isShowLogin}
+				handleConfirm={this.handleConfirmLogin}
+			/>
+            <Register
+				isShow={isShowRegister}
+				handleConfirm={this.handleConfirmRegister}
+			/>
 	  </div>
     );
   }

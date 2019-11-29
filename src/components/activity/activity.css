@@ -159,3 +159,53 @@
 }
 
 /* activities Area End */
+
+/*  How it Work Area Start  */
+
+.how-it-work {
+	padding: 97px 0px 496px;
+	position: relative;
+}
+
+.how-it-work .bg-shape {
+	position: absolute;
+	top: 350px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.how-it-work .section-heading {
+	margin-bottom: 59px;
+}
+
+.how-it-work .single-work {
+	text-align: center;
+}
+
+.how-it-work .single-work img {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.how-it-work .single-work .title {
+	font-size: 28px;
+	line-height: 38px;
+	font-family: "Ubuntu", sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+.how-it-work .single-work p {
+	font-size: 24px;
+	line-height: 34px;
+	font-weight: 300;
+	margin-bottom: 0px;
+	display: inline-block;
+	margin-top: 9px;
+}
+
+
+/* How it Work Area End*/

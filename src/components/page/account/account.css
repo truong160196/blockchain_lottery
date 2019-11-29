@@ -1,0 +1,137 @@
+.body-account {
+	position: relative;
+	margin-top: 100px;
+	background-color: #070b28;
+	background: #070b28;
+	background-image: url(../../../assets/images/footerbg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 140px;
+    background-size: cover;
+}
+
+.body-account .account-info {
+	position: relative;
+	margin-bottom: 15px;
+	display: inline-flex;
+}
+
+.body-account .account-info .avatar {
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	border: 2px solid #dfdfdf;
+	color: #dfdfdf;
+	font-weight: 700;
+	text-align: center;
+	justify-content: center;
+}
+
+.body-account .account-info .user-name {
+	margin-left: 15px;
+	padding-top: 5px;
+	color: #dfdfdf;
+}
+
+.body-account .account-info .user-name .user-role {
+	position: absolute;
+	z-index: 99;
+	right: -80px;
+	top: 8px;
+	background: rgb(247, 209, 85, 0.3);
+	border: 1px solid #f0b90b;
+	width: 70px;
+	height: 25px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.body-account .account-info .user-name .user-role p {
+	color:  #f0b90b;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+
+.body-account .tabs {
+	position: relative;
+	width: 100%;
+	margin-top: 15px;
+	border-bottom: 2px solid #2b1861;
+}
+
+.body-account .tabs .btn-tab {
+	color: #ffffff;
+	background: #2b1861;
+	min-width: 100px;
+	border-radius: 10px 10px 0 0;
+	margin: 5px 5px 0 5px;
+}
+
+.body-account .tabs .btn-tab:hover,
+.body-account .tabs .btn-tab:focus
+{
+	background: #070b28;
+	border-color: #f0b90b;
+	box-shadow: none;
+	border-bottom-color: #070b28;
+	color: #f0b90b;
+	font-weight: 400;
+}
+
+.body-account .tabs .active {
+	background: #070b28;
+	border-color: #f0b90b;
+	box-shadow: none;
+	border-bottom-color: #070b28;
+	color: #f0b90b;
+	font-weight: 700 !important;
+	-webkit-box-shadow: 0px -3px 3px 0px rgba(57,63,107,1);
+	-moz-box-shadow: 0px -3px 3px 0px rgba(57,63,107,1);
+	box-shadow: 0px -3px 3px 0px rgba(57,63,107,1);
+}
+
+.body-account .tab-content {
+	min-height: 350px;
+}
+
+.body-account .dashboard {
+	width: 100%;
+	margin-top: 15px;
+}
+
+.body-account .dashboard .card {
+    padding: 35px 20px 15px;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    background: #252f5a;
+	border-radius: 15px;
+	-webkit-box-shadow: 1px 2px 2px 0px rgba(31,31,31,1);
+	-moz-box-shadow: 1px 2px 2px 0px rgba(31,31,31,1);
+	box-shadow: 1px 2px 2px 0px rgba(31,31,31,1);
+}
+
+.body-account .dashboard .card .balance-title {
+	position: relative;
+}
+
+.body-account .dashboard .card .balance {
+	display: inline-flex;
+}
+
+.body-account .dashboard .card .balance h3 {
+	font-weight: 600;
+	font-size: 40px;
+}
+
+.body-account .dashboard .card .balance h4 {
+	font-weight: 400;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+.body-account .dashboard .card .balance h5 {
+	font-size: 17px;
+	font-weight: 400;
+	margin-right: 10px;
+}

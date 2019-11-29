@@ -6,7 +6,7 @@ import lotteryImg from '../../assets/images/lottery.png';
 
 class Breadcrumb extends React.Component {
   componentWillMount = () => {
-    //
+	//
   }
 
   render() {
