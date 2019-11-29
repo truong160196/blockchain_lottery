@@ -99,19 +99,40 @@ class Account extends React.Component {
 			  </div>
 			  <div className="col-sm-12 col-lg-6">
 				<div className="card">
-					<div className="balance-title">
-						<label>Account Balance</label>
+					<div className="ticket-title">
+						<label>Lottery ticket</label>
 					</div>
-					<div className="balance">
-						<h3>1,54545</h3>
-						<h4>BTC</h4>
-					</div>
-					<div className="balance-title">
-						<label>Estimated Value</label>
-					</div>
-					<div className="balance">
-						<h5>~10,2521</h5>
-						<h5>USD</h5>
+					<div className="ticket">
+						<table className="table table-lottery">
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>
+										<ul class="number-list">
+											<li>24</li>
+											<li>25</li>
+											<li>26</li>
+											<li>27</li>
+											<li>28</li>
+										</ul>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>
+										<ul class="number-list">
+											<li>16</li>
+											<li>01</li>
+											<li>08</li>
+											<li>37</li>
+											<li>48</li>
+										</ul>
+									</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			  </div>

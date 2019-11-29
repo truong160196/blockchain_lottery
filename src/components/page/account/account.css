@@ -135,3 +135,16 @@
 	font-weight: 400;
 	margin-right: 10px;
 }
+
+.body-account .dashboard .card .table-lottery {
+	border: none;
+	color: #dfdfdf;
+}
+
+.body-account .dashboard .card .table-lottery tr {
+	border: none;
+}
+
+.body-account .dashboard .card .table-lottery tr td {
+	border: none;
+}
