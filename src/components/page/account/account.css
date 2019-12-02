@@ -99,52 +99,196 @@
 	margin-top: 15px;
 }
 
-.body-account .dashboard .card {
+.body-account .card {
+	margin: 10px;
     padding: 35px 20px 15px;
     -webkit-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
     background: #252f5a;
-	border-radius: 15px;
-	-webkit-box-shadow: 1px 2px 2px 0px rgba(31,31,31,1);
-	-moz-box-shadow: 1px 2px 2px 0px rgba(31,31,31,1);
-	box-shadow: 1px 2px 2px 0px rgba(31,31,31,1);
+	border-radius: 10px;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(31,31,31,1);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(31,31,31,1);
+	box-shadow: 1px 1px 1px 0px rgba(31,31,31,1);
 }
 
-.body-account .dashboard .card .balance-title {
+.body-account .card .card-title {
 	position: relative;
-}
-
-.body-account .dashboard .card .balance {
 	display: inline-flex;
 }
 
-.body-account .dashboard .card .balance h3 {
+.body-account .card .card-title .balance-type {
+	width: 75px;
+	height: 30px;
+	font-size: 14px;
+	margin-left: 15px;
+	padding: 5px;
+	background: #e7e7e7;
+}
+
+.body-account .card small {
+	font-style: italic;
+}
+
+.body-account .card .card-body {
+	display: inline-flex;
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+.body-account .card .card-body .btn-deposit {
+	background: #2b1861;
+	color: #ffffff;
+	margin-right: 5px;
+	border: 1px solid #636a88;
+}
+
+.body-account .card .card-body .btn-deposit:hover,
+.body-account .card .card-body .btn-deposit:focus
+{
+	background: #584294;
+	color: #fffb00;
+	border: 1px solid #3d4052;
+}
+
+.body-account .card .card-body .btn-deposit.disable {
+	background: #636a88;
+}
+
+.body-account .input-read-only {
+	pointer-events: none;
+	background: #2b1861;
+	cursor: default;
+	color: #fffb00;
+	font-weight: 700;
+	border: none;
+	box-shadow: none;
+}
+
+.body-account .card p {
+	margin: 5px;
+	font-size: 15px;
+}
+
+.body-account .qrCode-over {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.7;
+}
+.body-account .qrCode {
+    position: fixed;
+    z-index: 999999;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+    border-radius: 15px;
+}
+.body-account .qrCode canvas {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+}
+
+.body-account .btn-close {
+    position: absolute;
+    background: none;
+    font-size: 30px;
+    width: 35px;
+    height: 35px;
+    right: 5px;
+    top: -15px;
+    border-radius: 50%;
+}
+
+.body-account .btn-close:hover,
+.body-account .btn-close:focus {
+    box-shadow: none;
+    color: #bfbfbf;
+}
+
+.body-account .card .card-body h3 {
 	font-weight: 600;
 	font-size: 40px;
 }
 
-.body-account .dashboard .card .balance h4 {
+.body-account .card .card-body h4 {
 	font-weight: 400;
 	margin-top: 15px;
 	margin-left: 10px;
 }
 
-.body-account .dashboard .card .balance h5 {
+.body-account .card .card-body h5 {
 	font-size: 17px;
 	font-weight: 400;
 	margin-right: 10px;
 }
 
-.body-account .dashboard .card .table-lottery {
+.body-account .card .table-lottery {
 	border: none;
 	color: #dfdfdf;
 }
 
-.body-account .dashboard .card .table-lottery tr {
+.body-account .card .table-lottery tbody{
+	max-height: 50px;
+	overflow: hidden;
+	overflow-x: scroll
+}
+
+.body-account .card .table-lottery tr {
 	border: none;
 }
 
-.body-account .dashboard .card .table-lottery tr td {
+.body-account .card .table-lottery tr td {
 	border: none;
+}
+
+.body-account .card .table-lottery tr td span.loss {
+	border-radius: 20px;
+	background: #8b2121;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 5px 10px;
+}
+
+.body-account .card .table-lottery tr td span.win {
+	border-radius: 20px;
+	background: #1b8521;
+	font-size: 14px;
+	font-weight: 600;
+	color: #ffffff;
+	padding: 5px 10px;
+}
+
+.number-list {
+	margin: 0 -3px;
+}
+
+.number-list li {
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 30px;
+	display: inline-block;
+	margin: 5px;
+	font-weight: 600;
+	border-radius: 50%;
+	background-image: -moz-linear-gradient(26deg, #382f21 9%, #8b642a 39%, #de9932 100%);
+	background-image: -webkit-linear-gradient(26deg, #382f21 9%, #8b642a 39%, #de9932 100%);
+	background-image: -ms-linear-gradient(26deg, #382f21 9%, #8b642a 39%, #de9932 100%);
+	background-image: linear-gradient(26deg, #382f21 9%, #8b642a 39%, #de9932 100%);
+	color: #ffffff;
 }

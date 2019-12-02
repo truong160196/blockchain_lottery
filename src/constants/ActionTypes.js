@@ -25,6 +25,38 @@ export const ROLE = {
 	USER: '2',
 }
 
+export const SORT = {
+	DESC: 'DESC',
+	ASC: 'ASC'
+}
+
+export const STATUS_LOTTERY = {
+	WIN: 'Win',
+	LOSS: 'Loss'
+}
+
+export const LIST_CURRENCY ={
+	BTC: 'BTC',
+	ETH: 'ETH',
+	QTN: 'QTN',
+	USD: 'USD'
+}
+
+export const BALANCE_TYPE = [
+	{
+		symbol: LIST_CURRENCY.BTC,
+		name: 'Bitcoin'
+	},
+	{
+		symbol: LIST_CURRENCY.ETH,
+		name: 'Ethereum'
+	},
+	{
+		symbol: LIST_CURRENCY.QTN,
+		name: 'QuocTruongToken'
+	},
+];
+
 export const TABS = {
 	DASHBOARD: 'DASHBOARD',
 	WITHDRAW: 'WITHDRAW',

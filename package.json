@@ -2,7 +2,6 @@
   "name": "blockchain_lottery",
   "version": "1.0.0",
   "description": "provider smart contract lottery number and front end bet coin",
-  "main": "index.js",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
